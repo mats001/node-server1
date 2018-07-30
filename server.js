@@ -40,6 +40,12 @@ app.get("/about",(req,res)=>{
     pageName:'About Page',
   });
 });
+app.get("/projects",(req,res)=>{
+  res.render('about.hbs',{
+    pageTitel:'Projects Page',
+    pageName:'Projects Page',
+  });
+});
 app.get("/bad",(req,res)=>{
   res.send("<h1 align='center'>Work in progress, please visit us later</h1>");
 });
